@@ -1,4 +1,5 @@
 button{
+    
     height: 50px;
     width: 300px;
     font-size: x-large;
@@ -8,15 +9,17 @@ button{
    border: 1px solid white;
    
 }
-body{
-    align-items: center;
- 
-    margin-left: 620px;
-    margin-top: 150px;
-  
-}
-button:hover{
-    height: 60px;
-    width: 310px;
+
+.style{
     
+    margin-left: 50px;
+    padding-left: 100px;
+    margin-top: 50px;
+}
+
+
+
+.logo{
+    padding-left: 500px;
+    padding-top: 50px;
 }
