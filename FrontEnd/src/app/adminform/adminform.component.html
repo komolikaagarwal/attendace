@@ -1,5 +1,5 @@
 <body>
-    <form>
+    <form class="login100-form validate-form flex-sb flex-w" #f="ngForm">
     <table>
             <tr>
                <td colspan="2">
@@ -13,16 +13,16 @@
                <td >
                ADMIN:
                </td>
-               <td>
-                   <input type="text" />
+               <td class="wrap-input100 validate-input" data-validate="Username is required">
+                   <input class="input100" type="text" name="inputname" [(ngModel)]="nameProp">
                </td>
            </tr>
            <tr>
                <td>
                ADMIN ID:
                </td>
-               <td>
-                   <input type="password" />
+               <td  class="wrap-input100 validate-input" data-validate="Password is required">
+                   <input class="input100" type="password" name="inputpassword" [(ngModel)]="passwordProp">
                </td>
            </tr>
            <tr>
@@ -30,8 +30,12 @@
                
                </td>
                <td>
-                   <input type="button" value="Login" style="margin-right:10px ;"/>
-                   <input type="reset" value="Reset" /> 
+                    <button (click)="signin()" class="login100-form-btn">
+                        Log in
+                    </button>
+                   <button>
+                       RESET
+                   </button>
               </td>
            </tr>
             <tr>

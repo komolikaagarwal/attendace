@@ -9,6 +9,11 @@ import { HomeComponent } from './home/home.component';
 import { AdminformComponent } from './adminform/adminform.component';
 import { FacultyformComponent } from './facultyform/facultyform.component';
 import { StudentformComponent } from './studentform/studentform.component';
+import { AttendanceComponent } from './attendance/attendance.component';
+
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -22,11 +27,15 @@ import { StudentformComponent } from './studentform/studentform.component';
 
     FacultyformComponent,
 
-    StudentformComponent
+    StudentformComponent,
+
+    AttendanceComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
